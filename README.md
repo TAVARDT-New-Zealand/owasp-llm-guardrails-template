@@ -7,7 +7,7 @@
 
 Production-ready open source middleware and security blueprint for mitigating Prompt Injection (OWASP LLM01), system prompt extraction, and adversarial jailbreaks, aligned with NZISM guidance and CERT NZ AI cybersecurity recommendations.
 
-Engineered and maintained by the AI security engineering practice at **[TAVARDT New Zealand](https://ag.tavardt.com/nz/super-intelligence/)**.
+Engineered and maintained by the AI safety and security engineering practice at **[TAVARDT New Zealand](https://ag.tavardt.com/nz/super-intelligence/)**.
 
 ---
 
@@ -42,7 +42,7 @@ Benchmark your AI systems against real-world adversarial prompt patterns using T
 
 ## 4. Installation & Implementation Instructions
 
-### Clone & Execução
+### Clone & Run
 
 ```bash
 git clone https://github.com/TAVARDT-New-Zealand/owasp-llm-guardrails-template.git
@@ -50,25 +50,25 @@ cd owasp-llm-guardrails-template
 python examples/quickstart.py
 ```
 
-### Exemplo de Integração
+### Python Integration Example
 
 ```python
 from guardrails.validator import LLMGuardrail
 
 guard = LLMGuardrail()
 
-# 1. Validação de Ingress (Input Guardrail)
+# 1. Ingress Validation (Input Guardrail)
 is_safe, error = guard.validate_input(user_input)
 if not is_safe:
-    raise ValueError(f"Blocked input: {error}")
+    raise ValueError(f"Input blocked due to suspicious adversarial pattern: {error}")
 
-# 2. Injeção de Canary no Prompt de Sistema
+# 2. Inject Canary Token into System Prompt
 hardened_system_prompt = guard.get_canary_injection_prompt(system_prompt)
 
-# 3. Validação de Egress (Output Guardrail)
+# 3. Egress Validation (Output Guardrail)
 is_valid, leak_error = guard.validate_output(completion)
 if not is_valid:
-    raise SecurityError("System prompt leak detected!")
+    raise SecurityError("Critical alert: System prompt leak detected via canary token!")
 ```
 
 ---
@@ -84,5 +84,5 @@ For enterprise AI assessments, autonomous agent engineering, or managed security
 
 ## Licence
 
-Distribuído sob a licença de código aberto MIT. Consulte o arquivo [`LICENSE`](LICENSE) para mais detalhes.  
+Distributed under the open-source MIT Licence. View the [`LICENSE`](LICENSE) file for terms.  
 Copyright (c) 2026 TAVARDT New Zealand.

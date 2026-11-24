@@ -7,9 +7,9 @@
 
 Production-ready open source middleware and security blueprint for mitigating Prompt Injection (OWASP LLM01), system prompt extraction, and adversarial jailbreaks, aligned with NZISM guidance and CERT NZ AI cybersecurity recommendations.
 
-Engineered and maintained by the AI safety and security engineering practice at **[TAVARDT New Zealand](https://ag.tavardt.com/nz/super-intelligence/)**.
+Engineered and maintained by the AI safety and security engineering practice at **TAVARDT New Zealand**.
 
----
+***
 
 ## 1. AI Security Architecture Overview
 
@@ -18,27 +18,27 @@ This repository provides a modular, production-ready middleware implementing **g
 ### Securing LLM Execution Boundaries
 LLMs lack a built-in security boundary between control instructions and untrusted user data. Application-layer guardrails ensure prompt integrity and prevent unauthorized tool execution.
 
----
+***
 
 ## 2. Threat Vectors Addressed (OWASP Top 10 for LLMs)
 
 | Defence Layer | Threat Vector Mitigated | Mitigation Mechanism |
-| :--- | :--- | :--- |
+| :- | :- | :- |
 | **Input Sanitiser** | Direct Prompt Injection & Jailbreaks | Pre-inference filtering for instruction override patterns and context switching. |
 | **Canary Token Verifier** | System Prompt Exfiltration | Detection of secret canary values within generated output strings. |
 | **RAG Boundary Guard** | Indirect Prompt Injection | Boundary tagging for third-party knowledge base documents. |
 | **Structured Output Filter** | Unauthorised Tool Dispatch | Schema enforcement across all function calling and tool execution routes. |
 
----
+***
 
 ## 3. Pre-Deployment AI Robustness Assessment
 
 Benchmark your AI systems against real-world adversarial prompt patterns using TAVARDT's diagnostic platform:
 
-* **AI Robustness Assessment:** [TAVARDT New Zealand LLM Robustness Evaluator](https://tools.tavardt.com/nz/llm-robustness-evaluator/)
-* **Engineering Tools Platform:** [TAVARDT Tools New Zealand](https://tools.tavardt.com/nz/)
+* **AI Robustness Assessment:** **TAVARDT New Zealand LLM Robustness Evaluator**
+* **Engineering Tools Platform:** **TAVARDT Tools New Zealand**
 
----
+***
 
 ## 4. Installation & Implementation Instructions
 
@@ -71,16 +71,16 @@ if not is_valid:
     raise SecurityError("Critical alert: System prompt leak detected via canary token!")
 ```
 
----
+***
 
 ## 5. AI Security Advisory & Enterprise Agent Engineering
 
 For enterprise AI assessments, autonomous agent engineering, or managed security architecture:
 
-* **Corporate Portal:** [TAVARDT New Zealand](https://ag.tavardt.com/nz/super-intelligence/)
+* **Corporate Portal:** **TAVARDT New Zealand**
 * **Technical Contact:** [Contact Engineering Team](https://ag.tavardt.com/nz/contact/)
 
----
+***
 
 ## Licence
 

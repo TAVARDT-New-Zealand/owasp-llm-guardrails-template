@@ -7,7 +7,7 @@
 
 Production-ready open source middleware and security blueprint for mitigating Prompt Injection (OWASP LLM01), system prompt extraction, and adversarial jailbreaks, aligned with NZISM guidance and CERT NZ AI cybersecurity recommendations.
 
-Engineered and maintained by the AI safety and security engineering practice at **TAVARDT New Zealand**.
+Engineered and maintained by the AI safety and security engineering practice at **TAVARDT**.
 
 ***
 
@@ -35,7 +35,7 @@ LLMs lack a built-in security boundary between control instructions and untruste
 
 Benchmark your AI systems against real-world adversarial prompt patterns using TAVARDT's diagnostic platform:
 
-* **AI Robustness Assessment:** **TAVARDT New Zealand LLM Robustness Evaluator**
+* **AI Robustness Assessment:** **TAVARDT LLM Robustness Evaluator**
 * **Engineering Tools Platform:** **TAVARDT Tools New Zealand**
 
 ***
@@ -77,7 +77,7 @@ if not is_valid:
 
 For enterprise AI assessments, autonomous agent engineering, or managed security architecture:
 
-* **Corporate Portal:** **TAVARDT New Zealand**
+* **Corporate Portal:** **TAVARDT**
 * **Technical Contact:** [Contact Engineering Team](https://ag.tavardt.com/nz/contact/)
 
 ***
@@ -85,4 +85,8 @@ For enterprise AI assessments, autonomous agent engineering, or managed security
 ## Licence
 
 Distributed under the open-source MIT Licence. View the [`LICENSE`](LICENSE) file for terms.  
-Copyright (c) 2026 TAVARDT.
+Copyright
+
+***
+
+© 2026 TAVARDT. All rights reserved.
